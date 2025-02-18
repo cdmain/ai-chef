@@ -31,4 +31,56 @@ body {
 .nav-title {
     font-weight: 400;
     font-size: 32px;
+
+    color: rgba(20, 20, 19, 1);
+}
+
+.page {
+    width: 100%;
+}
+
+.form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+
+    padding: 67px 63px;
+}
+
+.ingredient-input {
+    width: 399px;
+    height: 38px;
+
+    padding: 9px 13px;
+
+    border-radius: 6px;
+    border: 1px solid rgba(209, 213, 219, 1);
+
+    box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.05);
+
+    flex-grow: 1;
+    min-width: 150px;
+    max-width: 399px;
+}
+
+.add-ingredient-button {
+    width: 183px;
+    height: 38px;
+
+    background-color: rgba(20, 20, 19, 1);
+    color: rgba(250, 250, 248, 1);
+
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+    border-radius: 6px;
+    border: 0;
+    
+    font-family: Inter, sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.add-ingredient-button::before {
+    content: "+";
+    margin-right: 5px;
 }

@@ -39,7 +39,7 @@ body {
     width: 100%;
 }
 
-.form {
+.add-ingredient-form {
     display: flex;
     justify-content: center;
     align-items: center;

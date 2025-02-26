@@ -41,11 +41,12 @@ body {
 
 .add-ingredient-form {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     gap: 12px;
 
-    padding: 67px 63px;
+    padding: 67px 63px 37px;
 }
 
 .ingredient-input {
@@ -83,4 +84,71 @@ body {
 .add-ingredient-button::before {
     content: "+";
     margin-right: 5px;
+}
+
+.ingredients-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ingredients-list-container {
+    width: 594px;
+}
+
+.ingredients-list-heading {
+    font-weight: 600;
+    font-size: 30px;
+    margin: 0;
+    color: rgba(20, 20, 19, 1);
+}
+
+.ingredients-list {
+    padding: 20px;
+    margin: 0;
+}
+
+.ingredients-list > li {
+    line-height: 35px;
+    font-weight: 400;
+    font-size: 18px;
+    color: rgba(71, 84, 103, 1);
+    margin-bottom: 10px;
+}
+
+.get-recipe-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    width: 594px;
+    height: 109px;
+    background-color: rgba(240, 239, 235, 1);
+    border-radius: 6px;
+}
+
+.get-recipe-heading {
+    font-weight: 500;
+    font-size: 18px;
+    color: rgba(20, 20, 19, 1);
+}
+
+.get-recipe-explaination {
+    font-weight: 400;
+    font-size: 14px;
+    color: rgba(107, 114, 128, 1);
+}
+
+.get-recipe-button {
+    background-color: rgba(209, 117, 87, 1);
+    color: rgba(250, 250, 248, 1);
+    width: 115px;
+    height: 38px;
+    border: 0;
+    border-radius: 6px;
+
+    font-family: Inter, sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    cursor: pointer;
 }

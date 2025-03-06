@@ -5,18 +5,6 @@ export default function IngredientsList(props) {
         <li key={ingredient}>{ingredient}</li>
     ))
 
-    async function fetchRecipe() {
-        const response = await fetch("https://ai-chef-backend.jordansewpershad.workers.dev", {
-            method: "POST",
-            headers: { "Content-Type": "application/json" },
-            body: JSON.stringify({ ingredients: props.ingredientList })
-        });
-    
-        const recipeMarkdown = await response.text();
-        console.log(recipeMarkdown);
-    }
-    
-    
     return (
         <section className="ingredients-container">
         

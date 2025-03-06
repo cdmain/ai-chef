@@ -19,7 +19,7 @@ export default function Main() {
 
     // Send ingredients API to get the recipe from the AI model
     async function fetchRecipe() {
-        const response = await fetch("https://ai-chef-backend.jordansewpershad.workers.dev", {
+        const response = await fetch("https://openai-chef-backend.jordansewpershad.workers.dev/", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({ ingredients: ingredients }),

@@ -32,7 +32,7 @@ export default function IngredientsList(props) {
                     <h3 className="get-recipe-heading">Ready for a recipe?</h3>
                     <p className="get-recipe-explaination">Generate a recipe from you list of ingredients.</p>
                 </div>
-                <button onClick={fetchRecipe} className="get-recipe-button">Get a recipe</button>                    
+                <button onClick={props.fetchRecipe} className="get-recipe-button">Get a recipe</button>                    
             </div>}
         </section>
     )

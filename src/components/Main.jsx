@@ -1,5 +1,5 @@
 import { useState } from "react"
-import IngredientsList from "./IngredientsList"
+import IngredientList from "./IngredientList"
 import Recipe from "./Recipe"
 
 export default function Main() {
@@ -17,18 +17,19 @@ export default function Main() {
             setIngredients(prevIngredientsList => [...prevIngredientsList, newIngredient])
     }
 
+    // Send ingredients API to get the recipe from the AI model
     async function fetchRecipe() {
         const response = await fetch("https://ai-chef-backend.jordansewpershad.workers.dev", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
-            body: JSON.stringify({ ingredients: ingredientList }),
+            body: JSON.stringify({ ingredients: ingredients }),
         });
 
         const data = await response.json();
         console.log("API Response:", data);
 
         if (data.recipe) {
-            setRecipe(data.recipe); // Set the recipe in state
+            setRecipe(data.recipe);
         } else {
             setRecipe("No recipe generated. Try again.");
         }
@@ -47,7 +48,7 @@ export default function Main() {
                 <button className="add-ingredient-button">Add ingredient</button>
             </form>
 
-            { ingredients.length > 0 && <IngredientsList fetchRecipe={fetchRecipe} ingredientList={ingredients} />}
+            { ingredients.length > 0 && <IngredientList getRecipe={fetchRecipe} ingredientList={ingredients} />}
 
             {recipe && <Recipe markdownRecipe={recipe} />}
         </main>

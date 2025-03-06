@@ -48,7 +48,7 @@ export default function Main() {
                 <button className="add-ingredient-button">Add ingredient</button>
             </form>
 
-            { ingredients.length > 0 && <IngredientList getRecipe={fetchRecipe} ingredientList={ingredients} />}
+            { ingredients.length > 0 && <IngredientList fetchRecipe={fetchRecipe} ingredientList={ingredients} />}
 
             {recipe && <Recipe markdownRecipe={recipe} />}
         </main>

@@ -4,6 +4,18 @@ export default function IngredientsList(props) {
     const ingredientsListItems = props.ingredientList.map(ingredient => (
         <li key={ingredient}>{ingredient}</li>
     ))
+
+    async function fetchRecipe() {
+        const response = await fetch("https://ai-chef-backend.jordansewpershad.workers.dev", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({ ingredients: props.ingredientList })
+        });
+    
+        const recipeMarkdown = await response.text();
+        console.log(recipeMarkdown);
+    }
+    
     
     return (
         <section className="ingredients-container">
@@ -20,7 +32,7 @@ export default function IngredientsList(props) {
                     <h3 className="get-recipe-heading">Ready for a recipe?</h3>
                     <p className="get-recipe-explaination">Generate a recipe from you list of ingredients.</p>
                 </div>
-                <button className="get-recipe-button">Get a recipe</button>                    
+                <button onClick={fetchRecipe} className="get-recipe-button">Get a recipe</button>                    
             </div>}
         </section>
     )

@@ -1,5 +1,4 @@
-## Still in progress
-# Beta version has been released 
+# AI Chef web application
 
 ## Live demo
 

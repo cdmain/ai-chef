@@ -15,13 +15,15 @@ Once the app is running. The application allows the user to:
 
 ## Technologies Used
 ### Frontend
+- **Vite**: A fast and lightweight build tool that optimizes development and production performance.
 - **HTML5**: Structure of the application, ensuring semantic and modern markup.
 - **CSS3**: Styling and responsive design to make the app mobile-friendly.
 - **JavaScript**: Adds functionality and interactivity, making the app dynamic.
 - **React.js**: Efficiently builds your user interface with state management and re-rendering.
 ### backend
-- **Cloudflare Workers**: Utilized for deploying the backend API, providing a fast, globally distributed edge-compute platform.
-- **OpenAI GPT-4o**: Powers the application with advanced large language model (LLM) capabilities.
+## Backend & Infrastructure
+- **OpenAI GPT-4o**: Processes ingredient lists and generates detailed recipes in Markdown format for the frontend to easily process and display.
+- **Cloudflare Workers**: Acts as the backend API, handling requests from the frontend and securely communicating with OpenAI for AI-powered recipe generation. This ensures low latency and global scalability via edge computing.
 
 ## License
 This project is open-source and available under the MIT License.

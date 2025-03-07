@@ -9,15 +9,16 @@ body {
 }
 
 button:hover {
-    background-color: #2980b9;
-    box-shadow: 0 0 15px rgba(52, 152, 219, 0.7);
-    transform: translateY(-2px);
+    outline: 4px solid #80D8FF;
+}
+
+button:focus {
+    outline: 4px solid #80D8FF;
 }
   
 button:active {
-    background-color: #1c5985;
     transform: translateY(2px) scale(0.98);
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    outline: 4px solid #80D8FF;
 }
 
 .nav-bar {
@@ -66,6 +67,7 @@ button:active {
     height: 38px;
 
     padding: 9px 13px;
+    margin: 5px 0;
 
     border-radius: 6px;
     border: 1px solid rgba(209, 213, 219, 1);
@@ -75,6 +77,10 @@ button:active {
     flex-grow: 1;
     min-width: 150px;
     max-width: 399px;
+}
+
+.ingredient-input:focus {
+    outline: 4px solid #80D8FF;
 }
 
 .add-ingredient-button {
@@ -96,11 +102,6 @@ button:active {
 .add-ingredient-button::before {
     content: "+";
     margin-right: 5px;
-}
-
-.add-ingredient-button:focus {
-    outline: 2px solid rgba(20, 20, 19, 1);
-    outline-offset: 3px;
 }
 
 .ingredients-container {
@@ -175,4 +176,16 @@ button:active {
     font-weight: 500;
     font-size: 14px;
     cursor: pointer;
+}
+
+.suggested-recipe-container {
+    color: #475467;
+    line-height: 28px;
+    font-size: 1.125rem;
+    font-weight: 400;
+    padding: 33px;
+}
+
+.suggested-recipe-container ul li, .suggested-recipe-container ol li {
+    margin-bottom: 8px;
 }

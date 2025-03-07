@@ -5,7 +5,6 @@ export default function Header() {
         <nav className="nav-bar">
             <img className="nav-icon" src={AIChefIcon} alt="AI Chef Icon" />
             <span className="nav-title">AI Chef</span>
-            <h1>(Beta)</h1>
         </nav>
     )
 }

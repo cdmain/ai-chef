@@ -19,8 +19,7 @@ Once the app is running. The application allows the user to:
 - **CSS3**: Styling and responsive design to make the app mobile-friendly.
 - **JavaScript**: Adds functionality and interactivity, making the app dynamic.
 - **React.js**: Efficiently builds your user interface with state management and re-rendering.
-### backend
-## Backend & Infrastructure
+### Backend & Infrastructure
 - **OpenAI GPT-4o**: Processes ingredient lists and generates detailed recipes in Markdown format for the frontend to easily process and display.
 - **Cloudflare Workers**: Acts as the backend API, handling requests from the frontend and securely communicating with OpenAI for AI-powered recipe generation. This ensures low latency and global scalability via edge computing.
 

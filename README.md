@@ -2,7 +2,7 @@
 
 ## Live demo
 
-Click here to live demo: [AI Chef](https://cdmain.github.io/ai-chef/) 🤖🧑‍🍳🚀
+Click here to live demo: [AI Chef](https://cdmain.github.io/ai-chef/) 🚀
 
 ## Instructions on usage
 

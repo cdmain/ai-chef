@@ -5,7 +5,8 @@ import Recipe from "./Recipe"
 export default function Main() {
 
     const [ingredients, setIngredients] = useState([])
-    const [recipe, setRecipe] = useState(null);
+    const [recipe, setRecipe] = useState(null)
+    const [isLoading, setIsLoading] = useState(false)
 
     // Updates ingredients list when user enters a new ingredient (using form data)
     function addIngredients(formData) {
@@ -19,20 +20,24 @@ export default function Main() {
 
     // Send ingredients API to get the recipe from the AI model
     async function fetchRecipe() {
+        setIsLoading(true)
+        setRecipe(null)
+
         const response = await fetch("https://openai-chef-backend.jordansewpershad.workers.dev/", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({ ingredients: ingredients }),
         });
 
-        const data = await response.json();
-        console.log("API Response:", data);
+        const data = await response.json()
 
         if (data.recipe) {
             setRecipe(data.recipe);
         } else {
-            setRecipe("No recipe generated. Try again.");
+            setRecipe("No recipe generated. Try again.")
         }
+
+        setIsLoading(false);
     }
 
     return (
@@ -48,9 +53,22 @@ export default function Main() {
                 <button className="add-ingredient-button">Add ingredient</button>
             </form>
 
-            { ingredients.length > 0 && <IngredientList fetchRecipe={fetchRecipe} ingredientList={ingredients} />}
+            {isLoading && 
+                <p className="loading-dots">Generating your recipe
+                    <span>.</span><span>.</span><span>.</span>
+                </p>
+            }
 
-            {recipe && <Recipe markdownRecipe={recipe} />}
+            {ingredients.length > 0 && 
+                <IngredientList 
+                    fetchRecipe={fetchRecipe} 
+                    ingredientList={ingredients}
+                    isLoading={isLoading} />
+            }
+
+            {recipe && 
+                <Recipe markdownRecipe={recipe}/>
+            }
         </main>
     )
 }

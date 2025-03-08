@@ -15,13 +15,19 @@ export default function IngredientsList(props) {
                 </ul>
             </div>
 
-            {props.ingredientList.length > 3 && <div className="get-recipe-container">
-                <div>
-                    <h3 className="get-recipe-heading">Ready for a recipe?</h3>
-                    <p className="get-recipe-explaination">Generate a recipe from your list of ingredients.</p>
-                </div>
-                <button onClick={props.fetchRecipe} className="get-recipe-button">Get a recipe</button>                    
-            </div>}
+            {props.ingredientList.length > 3 && 
+                <div className="get-recipe-container">
+                    <div>
+                        <h3 className="get-recipe-heading">Ready for a recipe?</h3>
+                        <p className="get-recipe-explaination">Generate a recipe from your list of ingredients.</p>
+                    </div>
+                    <button 
+                        onClick={props.fetchRecipe} 
+                        className="get-recipe-button"
+                    >
+                        Get a recipe                        
+                    </button>                    
+                </div>}
         </section>
     )
 }

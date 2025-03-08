@@ -21,6 +21,7 @@ button:active {
     outline: 4px solid #80D8FF;
 }
 
+/* Header */
 .nav-bar {
     display: flex;
     justify-content: center;
@@ -51,6 +52,7 @@ button:active {
     width: 100%;
 }
 
+/* Main Form */
 .add-ingredient-form {
     display: flex;
     flex-wrap: wrap;
@@ -103,6 +105,7 @@ button:active {
     margin-right: 5px;
 }
 
+/* Ingredient list  */
 .ingredients-container {
     display: flex;
     flex-direction: column;
@@ -135,6 +138,7 @@ button:active {
     margin-bottom: 10px;
 }
 
+/* Get recipe section */
 .get-recipe-container {
     display: flex;
     align-items: center;
@@ -177,6 +181,7 @@ button:active {
     cursor: pointer;
 }
 
+/* Generated recipe */
 .suggested-recipe-container {
     color: #475467;
     line-height: 28px;
@@ -189,10 +194,12 @@ button:active {
     margin-bottom: 8px;
 }
 
+/* Animation of the 3 dots */
 .loading-dots {
     font-size: 1.2rem;
     text-align: center;
     font-weight: bold;
+    color: #475467;
 }
 
 .loading-dots span {

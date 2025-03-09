@@ -30,4 +30,9 @@ Once the app is running. The application allows the user to:
 ## License
 This project is licensed under the [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License](https://creativecommons.org/licenses/by-nc-sa/4.0/).
 
+[![CC BY-NC-SA 4.0][cc-by-nc-sa-shield]][cc-by-nc-sa]
+
+[cc-by-nc-sa-shield]: https://licensebuttons.net/l/by-nc-sa/4.0/80x15.png
+[cc-by-nc-sa]: https://creativecommons.org/licenses/by-nc-sa/4.0/
+
 Enjoy using this easy to use cross-platform AI Chef application! 🤖🧑‍🍳

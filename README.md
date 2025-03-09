@@ -28,6 +28,6 @@ Once the app is running. The application allows the user to:
 - **Cloudflare Workers**: Acts as the backend API, handling requests from the frontend and securely communicating with OpenAI for AI-powered recipe generation. This ensures low latency and global scalability via edge computing.
 
 ## License
-This project is open-source and available under the MIT License.
+This project is licensed under the [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License](https://creativecommons.org/licenses/by-nc-sa/4.0/).
 
 Enjoy using this easy to use cross-platform AI Chef application! 🤖🧑‍🍳

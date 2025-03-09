@@ -15,7 +15,7 @@ export default function IngredientsList(props) {
                 </ul>
             </div>
 
-            {props.ingredientList.length > 3 && 
+            {props.ingredientList.length > 0 && 
                 <div className="get-recipe-container">
                     <div>
                         <h3 className="get-recipe-heading">Ready for a recipe?</h3>

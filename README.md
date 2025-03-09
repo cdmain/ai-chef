@@ -1,6 +1,7 @@
 # AI Chef web application
 ![AI Chef Screenshot](src/site-screenshot-demo/Screenshot-ai-chef-app-1.png)
 ![AI Chef Screenshot](src/site-screenshot-demo/Screenshot-ai-chef-app-2.png)
+![AI Chef Screenshot](src/site-screenshot-demo/Screenshot-ai-chef-app-3.png)
 ![AI Chef Screenshot](src/site-screenshot-demo/Screenshot-ai-chef-app-4.png)
 
 ## Try it out 

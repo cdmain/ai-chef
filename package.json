@@ -4,6 +4,8 @@
   "private": true,
   "version": "1.0.0",
   "type": "module",
+  "license": "CC-BY-NC-SA-4.0",
+  "author": "Jordan Sewpershad",
   "scripts": {
     "dev": "vite",
     "build": "vite build",

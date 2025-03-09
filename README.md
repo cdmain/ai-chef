@@ -1,10 +1,13 @@
 # AI Chef web application
+![AI Chef Screenshot](src/site-screenshot-demo/Screenshot-ai-chef-app-1.png)
+![AI Chef Screenshot](src/site-screenshot-demo/Screenshot-ai-chef-app-2.png)
+![AI Chef Screenshot](src/site-screenshot-demo/Screenshot-ai-chef-app-4.png)
 
-## Live demo
+## Try it out 
 
 Click here to live demo: [AI Chef](https://cdmain.github.io/ai-chef/) 🚀
 
-## Instructions on usage
+## Instructions
 
 Once the app is running. The application allows the user to:
 

@@ -184,7 +184,6 @@ button:active {
 /* Generated recipe */
 .suggested-recipe-container {
     color: #475467;
-    line-height: 28px;
     font-size: 1.125rem;
     font-weight: 400;
     padding: 33px;
@@ -192,10 +191,6 @@ button:active {
     overflow-wrap: break-word; 
     white-space: pre-wrap;
     max-width: 100%; 
-}
-
-.suggested-recipe-container ul li, .suggested-recipe-container ol li {
-    margin-bottom: 8px;
 }
 
 /* Animation of the 3 dots */

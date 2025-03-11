@@ -188,6 +188,10 @@ button:active {
     font-size: 1.125rem;
     font-weight: 400;
     padding: 33px;
+    word-wrap: break-word;
+    overflow-wrap: break-word; 
+    white-space: pre-wrap;
+    max-width: 100%; 
 }
 
 .suggested-recipe-container ul li, .suggested-recipe-container ol li {

@@ -190,10 +190,6 @@ button:active {
     padding: 33px;
 }
 
-.suggested-recipe-container ul li, .suggested-recipe-container ol li {
-    margin-bottom: 8px;
-}
-
 /* Animation of the 3 dots */
 .loading-dots {
     font-size: 1.2rem;

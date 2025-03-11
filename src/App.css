@@ -185,12 +185,15 @@ button:active {
 .suggested-recipe-container {
     color: #475467;
     font-size: 1.125rem;
+    line-height: 33px;
     font-weight: 400;
     padding: 33px;
-    word-wrap: break-word;
-    overflow-wrap: break-word; 
-    white-space: pre-wrap;
+    overflow-wrap: break-word;
     max-width: 100%; 
+}
+
+.suggested-recipe-container ul li, .suggested-recipe-container ol li {
+    margin-bottom: 10px;
 }
 
 /* Animation of the 3 dots */

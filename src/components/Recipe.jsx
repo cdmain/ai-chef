@@ -13,9 +13,9 @@ export default function Recipe({ markdownRecipe }, ref) {
     }, [markdownRecipe]);
 
     return (
-        <section className="suggested-recipe-container" ref={recipeRef} >
+        <pre className="suggested-recipe-container" ref={recipeRef} >
             <h2>AI Chef Recommends:</h2>
             <ReactMarkdown>{markdownRecipe}</ReactMarkdown>
-        </section>
+        </pre>
     );
 }
